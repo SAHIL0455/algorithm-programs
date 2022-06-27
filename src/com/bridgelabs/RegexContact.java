@@ -22,7 +22,7 @@ public class RegexContact {
 
     private static void date() {
         LocalDate localDate = LocalDate.now();
-
+        Date = String.valueOf(localDate);
     }
 
     private static void number() {
@@ -64,6 +64,6 @@ public class RegexContact {
     public static void messages(){
         System.out.println("Read in the following message: Hello <<"+Name+">>, We have your full\n" +
                 "name as <<"+FullName+">> in our system. your contact number is 91-"+ Number +".\n" +
-                "Please,let us know in case of any clarification Thank you BridgeLabz 01/01/2016.");
+                "Please,let us know in case of any clarification Thank you BridgeLabz "+Date+".");
     }
 }
